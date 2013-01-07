@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.aming.ui.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.aming.ui-1.01.07.0.js"></script>
+
+    <style type="text/css">
+        .amingui_text {
+            position: relative;
+            height: 50px;
+        }
+
+            .amingui_text > div {
+                position: absolute;
+                height: 28px;
+            }
+
+        .amingui_text_input {
+            position: absolute;
+            border-width: 0px;
+            left: 3px;
+            bottom: 3px;
+            outline: none;
+        }
+
+        .amingui_text_info {
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+        }
+
+        .amingui_text_input:focus {
+        }
+
+        .amingui_text_border {
+            position: absolute;
+            border: 2px solid #0094ff;
+            border-top-width: 0px;
+            width: 200px;
+            height: 4px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="txt1">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[name='txt1']").amingui_text({
+                info: "Search"
+            });
+        });
+    </script>
+</body>
+</html>
